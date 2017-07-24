@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>鱼C出品</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="container">
+    <h3>JS方式调用</h3>
+    <div class="dropdown">
+        <a id="link1" href="#">产品大全</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Web开发</a></li>
+            <li><a href="#">Qt</a></li>
+            <li><a href="#">吹水阁</a></li>
+        </ul>
+    </div>
+    <h3>data-*方式调用</h3>
+    <div class="dropdown">
+        <a data-toggle="dropdown" href="#">产品大全</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Web开发</a></li>
+            <li><a href="#">Qt</a></li>
+            <li><a href="#">吹水阁</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--注意顺序哦～-->
+<script>
+    //Bootstrap提供的jQuery插件函数
+    $('#link1').dropdown();
+</script>
+</body>
+</html>

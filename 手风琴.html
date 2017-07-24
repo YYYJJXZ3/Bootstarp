@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>鱼C出品</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="container">
+
+    <!--第1个面板-->
+    <div class="panel-group" id="pg">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <!--添加a标签，触发折叠部分-->
+                <a data-parent="#pg" class="panel-title" data-toggle="collapse" href="#c1">面板1</a>
+            </div>
+
+            <!--折叠类包裹面板内容类-->
+            <div id="c1" class="collapse in panel-collapse">
+                <div class="panel-body">
+                    欢迎来到鱼C工作室～（www.fishc.com）
+                </div>
+            </div>
+        </div>
+
+        <!--第2个面板-->
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <a data-parent="#pg" href="#c2" class="panel-title" data-toggle="collapse">面板2</a>
+            </div>
+
+            <div id="c2" class="collapse in panel-collapse">
+                <div class="panel-body">
+                    欢迎来到鱼C工作室～（www.fishc.com）
+                </div>
+            </div>
+
+        </div>
+
+            <!--第3个面板-->
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <a data-parent="#pg" href="#c3" class="panel-title" data-toggle="collapse">面板3</a>
+            </div>
+
+            <div id="c3" class="collapse in panel-collapse">
+                <div class="panel-body">
+                    欢迎来到鱼C工作室～（www.fishc.com）
+                </div>
+            </div>
+        </div>
+
+                <!--第4个面板-->
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <a data-parent="#pg" href="#c4" class="panel-title" data-toggle="collapse">面板4</a>
+            </div>
+
+            <div id="c4" class="collapse in panel-collapse">
+                <div class="panel-body">
+                    欢迎来到鱼C工作室～（www.fishc.com）
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

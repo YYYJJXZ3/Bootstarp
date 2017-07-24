@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>鱼C出品</title>
+    <style>
+        div{
+            border: 1px dotted magenta;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>全局CSS样式——栅格布局系统</h1>
+
+    <h3>一行中只有一列</h3>
+    <div class="row">
+        <div class="col-md-1">MD-1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">MD-2</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">MD-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">MD-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">MD-5</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">MD-6</div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">MD-7</div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">MD-8</div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">MD-9</div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">MD-10</div>
+    </div>
+    <div class="row">
+        <div class="col-md-11">MD-11</div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">MD-12</div>
+    </div>
+
+    <h3>一行中放置等宽的多列</h3>
+    <div class="row">
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+        <div class="col-md-1">MD-1</div>
+
+        <!--放13个就会被放到第二行-->
+        <div class="col-md-1">MD-1</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">MD-2</div>
+        <div class="col-md-2">MD-2</div>
+        <div class="col-md-2">MD-2</div>
+        <div class="col-md-2">MD-2</div>
+        <div class="col-md-2">MD-2</div>
+        <div class="col-md-2">MD-2</div>
+
+        <div class="col-md-2">MD-2</div>
+    </div>
+
+
+    <h3>一行中放置不等宽的多列</h3>
+    <!--1:3的两列-->
+    <div class="row">
+        <div class="col-md-3">MD-3</div>
+        <div class="col-md-9">MD-9</div>
+    </div>
+    <!--1:2:1的三列-->
+    <div class="row">
+        <div class="col-md-3">MD-3</div>
+        <div class="col-md-6">MD-6</div>
+        <div class="col-md-3">MD-3</div>
+    </div>
+
+    <!--1:4:1的三列-->
+    <div class="row">
+        <div class="col-md-2">MD-2</div>
+        <div class="col-md-8">MD-2</div>
+        <div class="col-md-2">MD-2</div>
+    </div>
+
+    <!--1:3:1的三列？-->
+    <!--转换为：1:2:6:2:1的五列-->
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">MD-2</div>
+        <div class="col-md-6">MD-2</div>
+        <div class="col-md-2">MD-2</div>
+        <div class="col-md-1"></div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">MD-4
+            <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque dicta distinctio ea error esse laboriosam, laudantium libero minima natus nesciunt numquam omnis optio possimus quisquam sed sequi sunt! Modi!</span><span>Animi cum non tempora? Assumenda atque commodi consequatur enim facere fugit in, laboriosam magni maiores, mollitia nihil officia optio provident quos repudiandae sint sit sunt ullam unde vel! Doloribus, quis!</span><span>Ab aperiam deserunt dicta, excepturi exercitationem maiores maxime, neque numquam odit officiis, saepe sapiente veritatis voluptates? Aspernatur distinctio iusto minus officiis tempore temporibus vel veniam. Cumque doloribus quibusdam vero voluptatibus.</span></p>
+        </div>
+        <div class="col-md-4">MD-4
+            <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At doloremque esse harum ipsum labore maxime obcaecati odio quia recusandae veritatis. Animi aut consectetur exercitationem fuga in! Asperiores est similique voluptate.</span><span>Alias consequatur consequuntur delectus dignissimos ea id ipsum, minima mollitia neque nulla odio ut, vero, voluptatem! Alias blanditiis exercitationem facere hic id in laborum, mollitia perferendis quam saepe temporibus veniam.</span><span>Aliquam aperiam cum eum nesciunt, obcaecati perferendis quidem suscipit tempora veritatis. Architecto at aut beatae cum dolorem doloribus ducimus est excepturi, illo in ipsum natus, quam ullam veniam vitae voluptate?</span><span>Ad, aut consequatur delectus dicta dignissimos dolorem dolores earum est fugit ipsum iure laboriosam libero minima nam officia placeat soluta, suscipit vel. Accusamus, aliquid ducimus enim iusto nostrum sapiente ullam.</span><span>Asperiores assumenda blanditiis consectetur corporis distinctio dolore doloribus eius eum fugit harum id, ipsa iste iure laboriosam maxime nam natus nulla optio quaerat quam qui quis repellendus sed tempore veritatis.</span></p>
+        </div>
+        <div class="col-md-4">MD-4
+            <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cupiditate dolores, eligendi inventore laboriosam libero ratione sapiente soluta velit voluptates! Delectus deleniti deserunt fugiat natus numquam optio ratione totam? Dolores.</span><span>Accusantium, alias beatae cupiditate dignissimos ea est explicabo fugiat iusto laborum mollitia nam necessitatibus nesciunt quaerat quia quisquam ratione sed sint suscipit ullam veritatis vitae voluptates, voluptatum! Accusamus libero, soluta.</span><span>At, aut deserunt dicta eligendi facere id incidunt minima necessitatibus odit perferendis, placeat qui repellat tempora ut voluptatem. Accusantium cupiditate ea ex facere hic magni nobis optio repellat! Deserunt, velit.</span><span>At consectetur corporis delectus dolorem enim error in magni nesciunt, nihil nisi nobis perferendis praesentium, quam quidem quis quo, sed sequi temporibus vel veritatis. Ad ipsa libero magni nesciunt ullam?</span></p>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
